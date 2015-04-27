@@ -10,6 +10,9 @@ Optional Arguments:
 * -nomanifests: By default this script generates UE4 importable .T3D files from GameBryo cell data, populated with static meshes, weapons, etc.. Use this flag if you don't want to generate these files.
 * -allsubs: Debug flag, prints to console and notifies of any records that aren't supported.
 
+# What is Supported?
+As of this writing (4/27/2015), the script will parse various records and place them in a UE4 .T3D file as a static mesh. What this means is that your .T3D scene will look like the cell you've imported, but weapons, ammo, misc pick-up items, containers, doors etc will be non-functional.
+
 # Configuration
 The only thing you should have to configure is the scale of the .T3D files generated for UE4. Default scale is 1.4 (This is what I felt was appropriate in my own personal testing). If you want to change the way your levels are scaled when imported into UE4, just edit the script and change the line that reads,
 
